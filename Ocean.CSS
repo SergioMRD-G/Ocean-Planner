@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Patrick Hand', cursive;
+    background: #bde6f9;
+    overflow-x: hidden;
+}
+
+/* Binder Frame */
+.binder-frame {
+    width: 900px;
+    margin: auto;
+    background: #fffdfc;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #94cad9;
+    padding: 20px;
+    position: relative;
+    z-index: 2;
+    margin-top: 40px;
+}
+
+/* Jellyfish Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img {
+    width: 50px;
+    animation: float 5s ease-in-out infinite;
+}
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Tabs (Right Side) */
+.tabs-container {
+    position: absolute;
+    right: -90px;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.tab {
+    background: #ffe1f0;
+    padding: 10px 14px;
+    border-radius: 6px;
+    transform: rotate(10deg);
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    box-shadow: 2px 2px 4px #8882;
+}
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Task Input */
+.task-input {
+    display: flex;
+    gap: 8px;
+    margin: 15px 0;
+}
+.task-input input {
+    padding: 8px;
+    font-size: 18px;
+}
+
+/* Tasks */
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 12px;
+    background: #f9f2ff;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    align-items: center;
+    border-left: 8px solid #c9a9ff;
+}
+.task-item .edit {
+    cursor: pointer;
+    margin-right: 10px;
+}
+.task-item .delete {
+    cursor: pointer;
+    color: #ff5d5d;
+}
+
+/* Settings Panel */
+.settings {
+    background: #fff;
+    box-shadow: 0 0 10px #9995;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Hidden Toggle */
+.hidden {
+    display: none;
+}
+
+/* Background Canvas */
+#seaBackground {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+}

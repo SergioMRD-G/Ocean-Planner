@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastel Ocean Planner</title>
+    style.css
+    https://fonts.gstatic.com
+    https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <canvas id="seaBackground"></canvas>
+
+    <!-- Binder Frame -->
+    <div class="binder-frame">
+
+        <!-- Jellyfish Logo -->
+        <div class="logo">
+            https://i.imgur.com/FxF9Y9L.png
+            <span>My Ocean Planner</span>
+        </div>
+
+        <!-- Tabs (Right-side Binder Tabs) -->
+        <div id="tabsContainer" class="tabs-container">
+            <!-- Tabs dynamically injected -->
+        </div>
+
+        <!-- Content Area -->
+        <div class="content">
+            <div class="top-bar">
+                <input type="date" id="selectedDate">
+                <button id="toggleWeeklyView">Weekly View</button>
+                <button id="toggleDarkMode">Dark Mode</button>
+                <button id="openSettings">⚙️</button>
+            </div>
+
+            <!-- Task Input -->
+            <div class="task-input">
+                <input type="text" id="taskText" placeholder="Add a new task...">
+                <input type="time" id="taskTime">
+                <button id="addTask">Add</button>
+            </div>
+
+            <!-- Priority Toggle -->
+            <div class="priority-toggle">
+                <label>
+                    <input type="checkbox" id="showPriorities">
+                    Show Priority Labels
+                </label>
+            </div>
+
+            <!-- Task List -->
+            <ul id="taskList"></ul>
+
+            <!-- Weekly View -->
+            <div id="weeklyView" class="hidden"></div>
+
+            <!-- Settings Panel -->
+            <div id="settingsPanel" class="settings hidden">
+                <h2>Settings</h2>
+
+                <h3>Daily Non‑Negotiables</h3>
+                <div class="nonneg-row">
+                    <input type="text" id="newNonNegText" placeholder="Add non‑negotiable…">
+                    <select id="nonNegCategory"></select>
+                    <button id="addNonNeg">Add</button>
+                </div>
+                <ul id="nonNegList"></ul>
+
+                <h3>Tabs</h3>
+                <div class="tab-editor">
+                    <input type="text" id="newTabText" placeholder="New tab name…">
+                    <button id="addTab">Add Tab</button>
+                </div>
+                <ul id="customTabList"></ul>
+
+                <h3>Week Start</h3>
+                <label>
+                    <select id="weekStartChoice">
+                        <option value="monday">Start on Monday</option>
+                        <option value="sunday">Start on Sunday</option>
+                    </select>
+                </label>
+
+                <h3>Sound Effects</h3>
+                <label>
+                    <input type="checkbox" id="soundToggle"> Enable Sound Effects
+                </label>
+
+                <button id="closeSettings">Close</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    app.js</script>
+</body>
+</html>
